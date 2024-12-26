@@ -1,0 +1,13 @@
+@layer base {
+  *, *::before, *::after {
+    @apply box-border m-0 p-0;
+  }
+
+  html {
+    @apply text-base;
+  }
+
+  body {
+    @apply bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white;
+  }
+}

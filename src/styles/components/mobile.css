@@ -1,0 +1,78 @@
+@layer components {
+  /* Mobile-optimized containers */
+  .container-mobile {
+    @apply max-w-full px-4 sm:px-6;
+  }
+
+  /* Touch-friendly buttons */
+  .btn-mobile {
+    @apply min-h-[44px] min-w-[44px] p-3;
+  }
+
+  /* Mobile navigation */
+  .nav-mobile {
+    @apply fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-800 border-t dark:border-gray-700 
+           flex items-center justify-around py-2 px-4 z-50;
+  }
+
+  /* Mobile-optimized forms */
+  .form-input-mobile {
+    @apply text-base py-3;
+  }
+
+  /* Mobile-friendly cards */
+  .card-mobile {
+    @apply rounded-xl shadow-sm;
+  }
+
+  /* Bottom sheet */
+  .bottom-sheet {
+    @apply fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-800 rounded-t-2xl shadow-xl 
+           transform transition-transform duration-300 ease-in-out z-50;
+  }
+
+  .bottom-sheet-handle {
+    @apply w-12 h-1 bg-gray-300 dark:bg-gray-600 rounded-full mx-auto my-3;
+  }
+}
+
+/* Mobile gestures */
+@media (hover: none) and (pointer: coarse) {
+  .touch-scroll {
+    @apply overflow-x-auto overscroll-x-contain scrolling-touch;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .touch-action-none {
+    touch-action: none;
+  }
+}
+
+/* Mobile-specific animations */
+@media (max-width: 640px) {
+  .animate-slide-up {
+    animation: slideUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .animate-slide-down {
+    animation: slideDown 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(100%);
+    }
+  }
+}

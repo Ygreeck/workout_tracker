@@ -1,0 +1,17 @@
+@layer components {
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg shadow-lg;
+  }
+
+  .card-header {
+    @apply p-4 border-b dark:border-gray-700;
+  }
+
+  .card-body {
+    @apply p-4;
+  }
+
+  .card-footer {
+    @apply p-4 border-t dark:border-gray-700;
+  }
+}

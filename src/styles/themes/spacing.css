@@ -1,0 +1,9 @@
+@layer base {
+  :root {
+    --spacing-xs: theme('spacing.2');
+    --spacing-sm: theme('spacing.4');
+    --spacing-md: theme('spacing.6');
+    --spacing-lg: theme('spacing.8');
+    --spacing-xl: theme('spacing.12');
+  }
+}

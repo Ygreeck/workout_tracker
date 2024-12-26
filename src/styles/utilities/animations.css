@@ -1,0 +1,13 @@
+@layer utilities {
+  .animate-fade {
+    @apply transition-opacity duration-200;
+  }
+
+  .animate-slide {
+    @apply transition-transform duration-200;
+  }
+
+  .animate-scale {
+    @apply transition-transform duration-200;
+  }
+}
